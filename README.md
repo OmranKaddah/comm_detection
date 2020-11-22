@@ -1,1 +1,8 @@
 # comm_detection
+
+This repository inlcudes the scripts reqiured to get nodes embedding and, when possible, community assginments
+for the following methods:
+* GEMSEC and MNMF: requirements are same as of vecoder and 
+Karate club https://karateclub.readthedocs.io/en/latest/notes/installation.html . The authers of GEMSEC and MNMF mentioned that karate club, as a machine learning extension library, includes their methods. When running the scripts of each algorthims, the outputs can be found in karate_club/outputs and karate_club/embedding. reindex.py reindexes the cluster assignments and the nodes embedding in karate_club/outputs and karate_club/embedding respectively, and outputs them in ./reindexed. We had to reindex the nodes to follow karate club graphs' criterias.
+* [simplfied_CNRL](https://ieeexplore.ieee.org/abstract/document/8403293) was orginally downloaded from the website of the author http://nlp.csai.tsinghua.edu.cn/~tcc/ The website was down by the time of the writing README.md. So you can download the version we have [here](https://drive.google.com/file/d/1xleIgV_qD_DztGYvzrTT_4v0KMnHI4To/view?usp=sharing) In order to run the code, follow the instrucitons of README.md, the outputs can be found in simplfied_CNRL/outputs there is more discription on simplfied_CNRL/outputs/readme.txt on the naming of the outputs. run_all.sh was used as script to run the algorithm for the datasets mentioned there.
+* [CommunityGAN](https://arxiv.org/abs/1901.06631) we used the [official implmentation](https://github.com/SamJia/CommunityGAN) run_coom_gan.py was used to run CommunityGAN. It should be palced in ./scripts of the cloned repository.
